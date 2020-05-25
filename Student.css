@@ -1,0 +1,282 @@
+* {
+	margin: 0;
+	padding: 0; 
+	color: #b3bcc5;
+	font-size: 14px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.wrapper .header {
+	width: 100%;
+	height: 70px;
+	background-color: #354457;
+}
+
+.wrapper .header .logo {
+	display: inline-block;
+	margin: 20px 0 0 20px;
+}
+
+.wrapper .header img {
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+	border-radius: 10px;
+}
+
+.wrapper .left-menu	{
+	width: 200px;
+	height: calc(100% - 70px);
+	background-color: #4d5e70;
+	position: absolute;
+	top: 70px;
+}
+
+.wrapper .left-menu .menu-list dt, .wrapper .left-menu .menu-list dd {
+	line-height: 40px;
+	height: 40px;
+}
+
+.wrapper .left-menu .menu-list dt {
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+.wrapper .left-menu .menu-list dd {
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.wrapper .left-menu .menu-list .menu-active {
+	background-color: #ddd;
+	color: #354457;
+}
+
+.left-menu .menu-list dd:hover {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #354457;
+}
+
+.wrapper .right-content {
+	position: absolute;
+	left: 200px;
+	width: calc(100% - 200px);
+	height: calc(100% - 70px);
+	min-width: 500px;
+	background-color: #eee;
+}
+
+.wrapper .right-content .student-list-content {
+	position: relative;
+}
+
+.wrapper .right-content .student-list-content .searchStudent {
+	display: inline-block;
+}
+
+.wrapper .right-content .student-list-content .searchStudent .search {
+	width: 100px;
+	height: 30px;
+	border: none;
+	color: #000;
+}
+
+.wrapper .right-content .student-list-content .searchStudent button {
+	width: 50px;
+	height: 30px;
+	background-color: pink;
+	color: #fff;
+}
+
+.wrapper .right-content .student-list-content, .wrapper .right-content .add-student {
+	display: none;
+}
+
+.wrapper .right-content .student-active {
+	display: block;
+}
+
+.wrapper .right-content .student-list-content table {
+	width: 100%;
+}
+
+.wrapper .right-content .student-list-content thead {
+	background-color: #e3e8ee;
+}
+
+.wrapper .right-content .student-list-content tbody {
+	background-color: #fff;
+}
+
+.wrapper .right-content .student-list-content tr {
+	height: 30px;
+	line-height: 30px;
+}
+
+.wrapper .right-content .student-list-content th, .wrapper .right-content .student-list-content td {
+	min-width: 100px;
+	text-align: center;
+}
+
+.wrapper .right-content .student-list-content th {
+	color: #646987;
+}
+
+.wrapper .right-content .student-list-content td {
+	color: #111;
+}
+
+.wrapper .right-content .student-list-content button {
+	font-size: 12px;
+	cursor: pointer;
+	width: 44px;
+	height: 22px;
+	border: none;
+	color: #fff;
+	outline: none;
+}
+
+.wrapper .right-content .student-list-content .edit-btn {
+	background-color: #5cb85c;
+}
+
+.wrapper .right-content .student-list-content .del-btn {
+	background-color: #d9534f;
+}
+
+.wrapper .right-content form {
+	width: 300px;
+	position: absolute;
+	left: 50%;
+	top: 50px;
+	margin-left: -150px;
+}
+
+.wrapper .right-content form div {
+	margin-top: 15px;
+}
+
+.wrapper .right-content form div label {
+	display: inline-block;
+	width: 65px;
+	text-align: right;
+	margin-right: 15px;
+}
+
+.wrapper .right-content form div.handle {
+	padding-left: 85px;
+}
+
+.wrapper .right-content form div .btn {
+	width: 80px;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.edit-student-content {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+
+.edit-active {
+	display: block;
+}
+
+.edit-student-content .mask {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper .right-content .edit-student-content .edit-student {
+	top: 200px;
+	padding: 20px 50px 20px 50px;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.changePage {
+	padding: 10px;
+	width: 300px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.previousPage, .nextPage, .firstPage, .lastPage {
+	background-color: pink;
+	border-radius: 3px;
+}
+
+.pageIndex {
+	background-color: orange;
+	color: #fff;
+	padding: 0 3px 2px 3px;
+	border-radius: 3px;
+}
+
+.page-search {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.page-search div {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.page-search input {
+	width: 50px;
+	display: inline-block;
+}
+
+.page-search ul {
+	display: inline-block;
+}
+
+.page-search span {
+	display: inline-block;
+	padding: 2px 3px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background-color: pink;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.page-search li {
+	display: inline-block;
+	width: 30px;
+	height: 20px;
+	line-height: 20px;
+	padding: 2px 0;
+}
+
+.page-search .num {
+	cursor: pointer;
+}
+
+.page-active {
+	color: #fff;
+	background-color: pink;
+	border-radius: 5px;
+}
